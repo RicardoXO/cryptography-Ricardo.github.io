@@ -138,7 +138,7 @@ footer {
 }
 
 .img-escuela {
-    width: 200px;              /* Tamaño de la imagen (ajústalo a tu gusto) */
+    width: 300px;              /* Tamaño de la imagen (ajústalo a tu gusto) */
     height: auto;              /* Mantiene la proporción */
     border-radius: 8px;        /* Bordes redondeados (opcional) */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave (opcional) */
@@ -191,5 +191,35 @@ footer {
 @media (max-width: 600px) {
     .visor-pdf {
         height: 300px; /* Hacemos la vista previa más pequeña en celular */
+    }
+}
+
+/* Estilos para la sección de Criptografía */
+.contenido-cripto {
+    display: flex;              /* Pone imagen y texto lado a lado */
+    align-items: center;        /* Centra verticalmente */
+    gap: 30px;                  /* Espacio entre imagen y texto */
+}
+
+.img-cripto {
+    width: 200px;               /* Un poco más grande para que se aprecie la máquina/personaje */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.info-cripto {
+    flex: 1;                    /* Hace que el texto ocupe el resto del espacio disponible */
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .contenido-cripto {
+        flex-direction: column; /* Imagen arriba, texto abajo en celular */
+        text-align: center;
+    }
+    
+    .info-cripto {
+        text-align: left;       /* Mantiene el texto alineado a la izquierda para facilitar lectura */
     }
 }
