@@ -138,7 +138,7 @@ footer {
 }
 
 .img-escuela {
-    width: 150px;              /* Tamaño de la imagen (ajústalo a tu gusto) */
+    width: 200px;              /* Tamaño de la imagen (ajústalo a tu gusto) */
     height: auto;              /* Mantiene la proporción */
     border-radius: 8px;        /* Bordes redondeados (opcional) */
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave (opcional) */
@@ -155,5 +155,41 @@ footer {
     .contenido-formacion ul {
         text-align: left;       /* Mantiene la lista alineada a la izquierda */
         padding-left: 20px;
+    }
+}
+
+/* Estilos para la sección de Curriculum */
+.encabezado-cv {
+    display: flex;
+    justify-content: space-between; /* Título a la izq, botón a la der */
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap; /* Para que se ajuste en móviles */
+    gap: 15px;
+}
+
+.boton-descarga-cv {
+    background-color: #28a745; /* Color verde (común para descargas) */
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.boton-descarga-cv:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+.visor-pdf {
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Ajuste para móviles: el PDF puede ser difícil de leer incrustado en pantallas pequeñas */
+@media (max-width: 600px) {
+    .visor-pdf {
+        height: 300px; /* Hacemos la vista previa más pequeña en celular */
     }
 }
