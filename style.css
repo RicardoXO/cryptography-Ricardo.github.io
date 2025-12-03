@@ -223,3 +223,51 @@ footer {
         text-align: left;       /* Mantiene el texto alineado a la izquierda para facilitar lectura */
     }
 }
+
+/* Estilos para la sección de Llave Pública */
+.contenido-llave {
+    display: flex;             /* Alinea GIF y Botón lado a lado */
+    align-items: center;       /* Centra verticalmente */
+    justify-content: center;   /* Centra todo el bloque en la pantalla */
+    gap: 30px;                 /* Espacio entre el GIF y el botón */
+    padding: 20px;
+    background-color: #f9f9f9; /* Un fondo gris muy suave para diferenciar la sección */
+    border-radius: 8px;
+}
+
+.gif-seguridad {
+    width: 120px;              /* Tamaño del GIF */
+    height: auto;
+}
+
+.area-descarga-key p {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+.boton-key {
+    display: inline-block;
+    background-color: #333;    /* Color oscuro para denotar seguridad/técnico */
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 50px;       /* Bordes muy redondeados */
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.boton-key:hover {
+    background-color: #000;
+    transform: translateY(-2px); /* Pequeño efecto de elevación al pasar el mouse */
+}
+
+/* Responsivo para celulares */
+@media (max-width: 600px) {
+    .contenido-llave {
+        flex-direction: column; /* Uno encima del otro en móvil */
+        text-align: center;
+    }
+}
