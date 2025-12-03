@@ -1,0 +1,132 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+h1, h2 {
+    color: #005a9c; /* Un tono azul oscuro */
+}
+
+/* ======== Encabezado / Presentación ======== */
+header {
+    background-color: #004070; /* Azul más oscuro */
+    color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.foto-perfil {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace la imagen redonda */
+    border: 4px solid #ffffff;
+    object-fit: cover; /* Asegura que la foto no se distorsione */
+}
+
+header h1 {
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+/* Navegación del encabezado */
+header nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* ======== Secciones ======== */
+section {
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ======== Hobbies ======== */
+.galeria-hobbies {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; /* Para que se ajusten en móviles */
+    gap: 15px;
+}
+.galeria-hobbies figure {
+    margin: 0;
+    text-align: center;
+}
+.galeria-hobbies img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+.galeria-hobbies figcaption {
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* ======== Contacto y Enlaces ======== */
+#contacto a {
+    text-decoration: none;
+    color: #005a9c;
+}
+
+.redes-sociales a {
+    margin-right: 15px;
+    font-size: 1.1em;
+}
+.redes-sociales a:hover {
+    text-decoration: underline;
+}
+
+.enlaces-descarga {
+    margin-top: 20px;
+}
+
+.boton-descarga {
+    display: inline-block;
+    background-color: #005a9c;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.boton-descarga:hover {
+    background-color: #004070;
+}
+
+/* ======== Pie de página ======== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #777;
+    font-size: 0.9em;
+}
