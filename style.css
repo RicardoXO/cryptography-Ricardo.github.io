@@ -130,3 +130,30 @@ footer {
     color: #777;
     font-size: 0.9em;
 }
+/* Estilos para la sección de formación */
+.contenido-formacion {
+    display: flex;             /* Activa el modo flexible (lado a lado) */
+    align-items: center;       /* Centra verticalmente la imagen con el texto */
+    gap: 30px;                 /* Espacio entre la imagen y el texto */
+}
+
+.img-escuela {
+    width: 150px;              /* Tamaño de la imagen (ajústalo a tu gusto) */
+    height: auto;              /* Mantiene la proporción */
+    border-radius: 8px;        /* Bordes redondeados (opcional) */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Sombra suave (opcional) */
+}
+
+/* IMPORTANTE: Para celulares (Responsivo) */
+/* Si la pantalla es pequeña, pone la imagen arriba y el texto abajo */
+@media (max-width: 600px) {
+    .contenido-formacion {
+        flex-direction: column; /* Cambia a vertical */
+        text-align: center;
+    }
+    
+    .contenido-formacion ul {
+        text-align: left;       /* Mantiene la lista alineada a la izquierda */
+        padding-left: 20px;
+    }
+}
